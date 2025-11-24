@@ -83,6 +83,8 @@
 &trans      &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                   &kp DELETE  &trans     &trans    &trans  &trans  &trans
             >;
+
+            label = "Draw";
         };
     };
 };
