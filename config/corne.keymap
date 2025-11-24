@@ -67,13 +67,22 @@
 
         control {
             bindings = <
-&trans      &kp C_MUTE    &kp UP_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp C_MUTE    &kp UP_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &tog 4          &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp LEFT      &kp DOWN      &kp RIGHT          &kp LG(D)        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans             &trans           &trans          &trans  &trans  &trans
             >;
 
             label = "Control";
+        };
+
+        draw {
+            bindings = <
+&kp ESCAPE  &trans     &trans     &trans      &trans     &tog 4    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans     &trans     &trans      &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kp LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp DELETE  &trans     &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
